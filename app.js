@@ -7,13 +7,16 @@ var logger = require('morgan');
 //REQUERIMIENTO DE RUTAS
 var indexRouter = require('./routes/index');
 var equiposRouter = require('./routes/equipos');
-var espaciosRouter = require("./routes/espacios")
+var espaciosRouter = require("./routes/espacios");
+var trabajosRouter = require('./routes/trabajos');
+
 
 
 //APP.USE DE LAS RUTAS
 app.use("/inicio", indexRouter);
 app.use('/equipos', equiposRouter);
 app.use('/espacios', espaciosRouter);
+app.use('/trabajos', trabajosRouter);
 
 
 var app = express();
