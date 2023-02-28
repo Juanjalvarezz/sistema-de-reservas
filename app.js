@@ -10,7 +10,7 @@ var equiposRouter = require('./routes/equipos');
 var espaciosRouter = require("./routes/espacios");
 var trabajosRouter = require('./routes/trabajos');
 
-
+var app = express();
 
 //APP.USE DE LAS RUTAS
 app.use("/inicio", indexRouter);
@@ -18,8 +18,6 @@ app.use('/equipos', equiposRouter);
 app.use('/espacios', espaciosRouter);
 app.use('/trabajos', trabajosRouter);
 
-
-var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
