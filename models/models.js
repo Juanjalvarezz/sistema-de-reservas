@@ -1,5 +1,6 @@
 var equipos= [
     {
+      id: "001",
       serial: "001",
       nombre: "Pc",
       descripcion: "Equipo 8GB de RAM",
@@ -7,6 +8,7 @@ var equipos= [
       estatus: "ocupado",
     },
     {
+      id: "002",
       serial: "002",
       nombre: "Laptop",
       descripcion: "Equipo 16GB de RAM",
