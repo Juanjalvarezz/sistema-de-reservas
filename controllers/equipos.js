@@ -1,4 +1,4 @@
-const {equipos} = require ("../models/estrutura")
+const {equipos} = require ("../models/models");
 
 class equiposController {
     Listar(){
