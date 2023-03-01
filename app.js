@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var equiposRouter = require('./routes/equipos');
 var espaciosRouter = require("./routes/espacios");
 var trabajosRouter = require('./routes/trabajos');
+var reservasRouter = require('./routes/reservas');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use("/inicio", indexRouter);
 app.use('/equipos', equiposRouter);
 app.use('/espacios', espaciosRouter);
 app.use('/trabajos', trabajosRouter);
+app.use('/reservas', reservasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
