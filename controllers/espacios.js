@@ -1,4 +1,4 @@
-var {espacios} = require ("../models/estrutura")
+var {espacios} = require ("../models/models");
 
 class espaciosController {
     Listar(){
