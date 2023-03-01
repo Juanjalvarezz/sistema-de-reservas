@@ -58,17 +58,3 @@ app.listen(PORT, function(err){
   console.log("Server listening on PORT", PORT);
 }); 
 module.exports = app;
-
-  // render the error page
-  res.status(err.status || 500);  
-  res.render('error');
-});
-
-//Creando el mensaje del listener del servidor
-var PORT = 3001
-app.listen(PORT, function(err){
-  if (err) console.log(err);
-  console.log("Server listening on PORT", PORT);
-}); 
-
-module.exports = app;
